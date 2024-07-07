@@ -1,0 +1,91 @@
+Here are the answers:
+
+Question 1: b) using <link> tag
+
+To integrate a CSS file into an HTML file, you use the
+<link rel="stylesheet" type="text/css" href="style.css">
+
+Question 2: b) using <p> tag
+
+To make a new paragraph in HTML, you use the
+<p>This is a new paragraph.</p>
+
+Question 3: b) false
+
+The <div> tag is a block-level element, not an inline-block element. It takes up the full width available and starts on a new line.
+
+Question 4: a) true
+
+The <span> tag is an inline element, not a block-level element. It does not start on a new line and takes up only the space needed for its content.
+Question 5: a) 100
+
+The code calculates the value of y^y (10^10) and logs it to the console, then returns the result. So the output is 100.
+
+Question 6:
+
+A) To get the output array ['John', 'Jane', 'Bob'], you can use the map function:
+people.map(person => person.name)
+
+B) To get the output array with added "salary" property, you can use the map function:
+people.map(person => ({...person, salary: 50000}))
+
+C) To get the output array with only names and ages of people above 30 years old, you can use filter and map functions:
+people.filter(person => person.age > 30).map(person => ({name: person.name, age: person.age}))
+
+Let me know if you need further clarification!
+Q7:
+function main(cb1, cb2, x, y) {
+console.log(cb1(x, y)); // outputs: 15 (11 + 4)
+console.log(cb2(x, y)); // outputs: 7 (11 - 4)
+}
+
+function cb1(x, y) {
+return x + y;
+}
+
+function cb2(x, y) {
+return x - y;
+}
+
+main(cb1, cb2, 11, 4);
+Q8:
+The correct answer is C) map function.
+
+users.map(user => user.firstName + " " + user.lastName);
+
+This will output: ["Susan Steward", "Daniel Longbottom", "Jacob Black"]
+
+Q10:
+The correct answer is C) [].
+
+The filter function will return an empty array because the function "func" always returns false, which means no elements in the array pass the test.
+
+var arr = [1, 2, 3, 4, 5].filter(func); // outputs: []
+function func(v) {
+return false;
+}
+Q11:
+The correct answer is B) display: none removes the element from the DOM, while visibility: hidden just hides the element.
+
+Display: none removes the element from the DOM, and the space it occupied is closed up, as if the element were never there. Visibility: hidden hides the element, but the space it occupied remains, and the element is still in the DOM.
+
+Q12:
+The correct answer is A) 4 10 18
+
+Here's the breakdown:
+
+1. a = 1, b = 0
+2. First iteration: a = 2, b = 0 + (2 * 2) = 4 (logged to console)
+3. Second iteration: a = 3, b = 4 + (3 * 2) = 10 (logged to console)
+4. Third iteration: a = 4, b = 10 + (4 * 2) = 18 (logged to console)
+
+The output will be: 4, 10, 18
+The correct answer is C) [2,3,4,100].
+
+Here's what happens:
+
+1. arr.unshift(100) adds 100 to the beginning of the array, making arr = [100, 1, 2, 3, 4]
+2. arr.shift() removes the first element (100) from the array, making arr = [1, 2, 3, 4]
+3. But, since shift() returns the removed element (100), the array is then reassigned to arr = [2, 3, 4, 100]
+
+So, at the end of both operations, the value of arr is [2, 3, 4, 100].
